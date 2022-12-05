@@ -14,7 +14,7 @@ import com.example.bank.UI.SendToUserList;
 
 public class LoginActivity extends AppCompatActivity {
     EditText username, password;
-    Button btnlogin;
+    Button btnlogin, signin;
     com.example.bank.DBHelper DB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,7 @@ public class LoginActivity extends AppCompatActivity {
         username = (EditText) findViewById(R.id.username1);
         password = (EditText) findViewById(R.id.password1);
         btnlogin = (Button) findViewById(R.id.btnsignin1);
+        signin = findViewById(R.id.btnlogin);
         DB = new com.example.bank.DBHelper(this);
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,6 +44,14 @@ public class LoginActivity extends AppCompatActivity {
                         Toast.makeText(LoginActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
                     }
                 }
+            }
+        });
+
+        signin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
             }
         });
     }
