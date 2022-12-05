@@ -106,7 +106,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="textPassword"
             android:text=""
             android:textSize="15sp" />
     </LinearLayout>
@@ -139,13 +139,14 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="textPassword"
             android:text=""
             android:textSize="15sp" />
     </LinearLayout>
 
     <Button
         android:id="@+id/btnsignup"
+        android:background="@drawable/background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/repa"
@@ -157,6 +158,7 @@
 
     <Button
         android:id="@+id/btnsignin"
+        android:background="@drawable/background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnsignup"

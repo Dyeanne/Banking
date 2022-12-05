@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BasicBankingApp">
         <activity
+            android:name=".MainDashboard"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
@@ -19,7 +22,8 @@
         <activity android:name=".UI.UsersList" />
         <activity android:name=".UI.TransactionHistory" />
         <activity android:name=".UI.UserData" />
-        <activity android:name=".UI.SplashScreen"
+        <activity
+            android:name=".UI.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
